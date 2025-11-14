@@ -1,90 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guard Vip Security</title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUARD VIP SECURITTY</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #2e2e2e;
-            background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAYGBgYHBgcICAcKCwoLCg8ODAwODxY...gsKDw4MDA4PFhAREBEQFiIVGRUVGRUiHiQeHB4kHjYqJiYqNj40MjQ+TERETF9a');
-            background-size: 40%;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* Fondo con el logo */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/mnt/data/empresa carlos tapia.jpg');
+            background-size: 60%;
             background-repeat: no-repeat;
             background-position: center;
-            color: white;
+            opacity: 0.13;
+            z-index: -1;
         }
 
         header {
-            background: rgba(0,0,0,0.8);
-            padding: 25px;
-            text-align: center;
-            font-size: 32px;
-            color: gold;
-            font-weight: bold;
-            letter-spacing: 2px;
+            background: rgba(255,255,255,0.8);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #ddd;
         }
 
-        .contenido {
+        header img {
+            width: 120px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .container {
             max-width: 900px;
-            margin: 100px auto;
-            background: rgba(0,0,0,0.75);
+            margin: 40px auto;
+            background: rgba(255,255,255,0.85);
             padding: 30px;
-            border-radius: 10px;
-            border: 2px solid gold;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
 
         h2 {
-            color: gold;
+            color: #444;
         }
 
-        p {
+        .contact {
+            margin-top: 25px;
             font-size: 18px;
-            line-height: 1.5;
         }
 
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            padding: 20px;
-            background: rgba(0,0,0,0.8);
-            color: gold;
-            font-size: 14px;
+        .btn-whatsapp {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 22px;
+            background: #25D366;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1ebd5a;
         }
     </style>
-
 </head>
 <body>
 
     <header>
-        GUARD VIP SECURITY
+        <img src="/mnt/data/empresa carlos tapia.jpg" alt="Logo Guard Vip Security" />
+        <div class="title">GUARD VIP SECURITTY</div>
     </header>
 
-    <div class="contenido">
-        <h2>Quiénes Somos</h2>
+    <div class="container">
+        <h2>Presentación de la Empresa</h2>
         <p>
-            Somos <strong>Guard Vip Security</strong>, una empresa especializada y totalmente 
-            orientada en la **seguridad privada**. Nuestro compromiso es garantizar la 
-            protección, resguardo y confianza de nuestros clientes mediante soluciones 
-            profesionales y personal altamente capacitado.
+            GUARD VIP SECURITTY es una empresa dedicada de manera profesional al rubro de la seguridad privada.
+            Somos una empresa nueva en el mercado, pero contamos con la máxima disposición, compromiso y visión de
+            crecimiento para brindar servicios de seguridad confiables, eficaces y adaptados a las necesidades de
+            cada cliente.
         </p>
 
-        <h2>Servicios</h2>
         <p>
-            • Seguridad Privada<br>
-            • Custodia y Protección VIP<br>
-            • Seguridad Industrial<br>
-            • Supervisión y Monitoreo<br>
-            • Control de Accesos
+            Nuestro objetivo es entregar seguridad preventiva y operativa con responsabilidad, excelencia y
+            profesionalismo.
         </p>
+
+        <h2>Información General</h2>
+        <div class="contact">
+            <strong>Dueño:</strong> Carlos Tapia<br>
+            <strong>Correo:</strong> guardvipsafe@gmail.com<br>
+            <strong>Teléfono:</strong> +56 9 4775 0019
+        </div>
+
+        <a class="btn-whatsapp" href="https://wa.me/56947750019" target="_blank">Contactar por WhatsApp</a>
     </div>
-
-    <footer>
-        © 2025 Guard Vip Security — Todos los derechos reservados
-    </footer>
 
 </body>
 </html>
+
+
